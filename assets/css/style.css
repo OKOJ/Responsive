@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     float: left;
     position: static;
@@ -6,10 +6,10 @@ body{
     margin: 0px;
     width: 100%;
     height: 1200px;
-    
+
 }
-    
-header{
+
+header {
     position: static;
     background: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -23,21 +23,21 @@ header{
     padding: 0% 0% 1px 0%;
 }
 
-h2{
+h1 {
     color: #ffffff;
     background: #4aaaa5;
     width: 250px;
     height: 70px;
     padding: 41px 10px 5px 10px;
     float: left;
-    margin: 0px 50px 0px 50px;
-} 
+    margin: 0px 480px 0px 150px;
+}
 
-a{
+a {
     width: 75px;
     height: 35px;
-    float: right;
-    margin: 20px 30px 0px 0px;
+    float: left;
+    margin: 20px 0px 0px 0px;
     background: none;
     padding: 40px 10px 20px;
     text-decoration: none;
@@ -46,21 +46,21 @@ a{
 
 /* mouse over link */
 a:hover {
-    color:#4aaaa5;
+    color: #4aaaa5;
 }
 
-.wrapper{
+.wrapper {
     position: relative;
     background: #ffffff;
     width: 960px;
     height: 780px;
-    margin: 50px 150px 70px 50px;
+    margin: 50px 150px 70px 150px;
     float: left;
     padding: 30px;
 
 }
 
-h1{
+h2 {
     width: 950px;
     height: 20px;
     padding: 10px 0 40px 10px;
@@ -71,30 +71,30 @@ h1{
     border-width: 0px 0px 2px;
 }
 
-img{
+img {
     float: left;
 }
 
 
 
-p{
+p {
     padding: 10px 10px 5px 15px;
     color: #3f3f33;
     margin: 20px 20px 0px 300px;
 }
 
-form{
+form {
     margin: 7% 0 0 1%;
     color: #3f3f33;
 }
 
-input{
+input {
     width: 650px;
     height: 35px;
     color: cadetblue;
 }
 
-div.gallery {
+.gallery {
     margin: 0px 85px 30px 25px;
     float: left;
     width: 300px;
@@ -102,16 +102,12 @@ div.gallery {
     color: seashell;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
+.gallery img {
     width: 300px;
     height: 250px;
 }
 
-div.desc {
+.desc {
     float: left;
     background: #4aaaa5;
     width: 261px;
@@ -119,7 +115,11 @@ div.desc {
     padding: 20px;
 }
 
-.footer{
+.desc:hover {
+    border: 1px solid #777;
+}
+
+.footer {
     height: 50px;
     background: #666666;
     padding: 20px 0px 0px 0px;
@@ -132,4 +132,193 @@ div.desc {
     border-style: solid;
     border-width: 8px 0px 0px 0px;
     border-color: #4aaaa5;
+}
+
+/* Large devices (desktops, 980px and up)*/
+@media only screen and (max-width: 980px) {
+
+    body {
+        font-size: large;
     }
+
+    h1 {
+        margin: 0px 210px 0px 30px;
+        width: 35%;
+        height: -webkit-fill-available;
+        padding: 30px 1px 28px 1px;
+    }
+
+    a {
+        margin: 15px 0px 10px 0px;
+        width: 100px;
+    }
+
+    .wrapper {
+        width: 92%;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    p {
+        margin: auto;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 20px 9px 10px;
+    }
+
+    h2 {
+        width: 93%;
+        padding: 0px 0px 20px 30px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    .desc {
+        margin: 0 0 0 10px;
+    }
+
+    .gallery img {
+        margin-bottom: 0;
+    }
+    
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-size: x-large;
+    }
+
+    h1 {
+        margin: 0px 100px 0px 7px;
+        width: 35%;
+        height: 114px;
+        padding: 2px 1px 0px 1px;
+        
+    }
+
+    a {
+        margin: 15px 0px 10px 0px;
+        width: 100px;
+    }
+
+    .wrapper {
+        width: 95%;
+        margin: 7px;
+        padding: 10px;
+    }
+
+    p {
+        margin: auto;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 20px 9px 10px;
+    }
+
+    h2 {
+        width: 93%;
+        padding: 0px 0px 20px 30px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    .gallery {
+        margin: 0px 7px 30px 40px;
+    }
+
+    .gallery img  {
+        
+        width: 77%;
+        height:80%;
+        margin: 0 10px 0px 10px;
+    }
+
+    .desc { 
+        width: 64%;
+    }
+}
+
+
+/* Small devices (landscape phones, 640px and up)*/
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: larger;
+    }
+
+    h1 {
+        margin: 0px 10px 0px 7px;
+        height: 106px;
+        width: 35%;
+        padding: 5px;
+    }
+
+    a {
+        margin: 15px 0px 10px 0px;
+        width: 100px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 17px;
+        padding: 15px;
+
+    }
+
+    h2 {
+        width: 93%;
+        padding: 0px 0px 20px 30px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 25px 9px 15px;
+    }
+
+    p {
+        margin: auto;
+    }
+
+    .gallery {
+        width: 50%;
+        height:45%;
+        margin: 0px;
+        
+    }
+
+    .gallery img  {
+        
+        width: 80%;
+        height:70%;
+        margin: 25px 25px 0px 25px;
+    }
+
+    .desc { 
+        width: 66%;
+        margin: 0px 25px 0px 25px;;
+
+    }
+
+    form {
+        padding: 0 10px 0 35px;
+    }
+
+    input {
+        width: 94%;
+    }
+
+    textarea {
+        width: 94%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
